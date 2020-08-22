@@ -7,6 +7,38 @@
 	box-sizing: border-box;
 	font-family: 'Kanit', sans-serif;
 }
+.donate a
+{
+	background:#ff8000;
+	padding:20 50;
+	text-align:center;
+	border-radius:50px;
+	transform:scale(.5);
+	z-index:20;
+	position:absolute;
+    margin:auto;
+    color:#fff;
+    bottom:3;
+    width:100%;
+    transition:.2s;
+
+}
+.donate a:hover
+{
+	background:#ffffff;
+	color:#ff8000;
+
+}
+
+.donate  h3
+{
+	text-transform:uppercase;
+	text-decoration:none;
+	display: inline-block;
+	padding:0 10;
+	font-size:1cm;
+	
+}
 
 body
 {
@@ -34,6 +66,7 @@ section header
 	display:flex;
 	justify-content: space-between;
 	align-item:center;
+	
 }
 section header .logo
 {
@@ -133,6 +166,19 @@ section header .logo
 @media screen and (max-device-width:768px)
 {
 
+
+	.donate
+	{
+        position:relative;
+        bottom:-100;
+	}
+	
+
+	.donate h3
+	{
+		font-size:3cm;
+	}
+
 	*
 	{
 		margin:0;
@@ -171,14 +217,14 @@ section header .logo
 	section header .logo
 	{
 		position:relative;
-		font-size:.5cm;
+		font-size:1.5cm;
 		color:#fff;
 		font-weight:700;
 		text-transform:uppercase;
 		text-decoration:none;
 		letter-spacing:1px;
 		z-index:3;
-		padding:5px 10px;
+		padding:5px 20px;
 		border-radius:10px;
 		background:rgb(0,0,0,0.6);
 		border:1px solid #fff;
@@ -234,11 +280,11 @@ section header .logo
 	.content
 	{
 		left:0;
-		bottom:0px;
+		bottom:-10;
 		position:absolute;
 		z-index:5;
 		max-width:1200px;
-		margin:10;
+		margin:30;
 	}
 
 	.content h2 span
@@ -281,25 +327,3 @@ section header .logo
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
