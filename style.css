@@ -117,7 +117,7 @@ section header .logo:hover
 {
 	position:absolute;
 	right:240;
-	bottom:1185;
+	bottom:270;
 	z-index:4;
 	image-rendering: pixelated;
 }
@@ -125,7 +125,7 @@ section header .logo:hover
 {
 	position:absolute;
 	right:0;
-	bottom:1185;
+	bottom:0;
 	z-index:4;
 	image-rendering: pixelated;
 }
@@ -276,7 +276,7 @@ section header .logo:hover
 	{
 		position:absolute;
 		right:350;
-		bottom:1145;
+		bottom:1185;
 		z-index:4;
 		image-rendering: pixelated;
 		width:180;
@@ -285,7 +285,7 @@ section header .logo:hover
 	{
 		position:absolute;
 		right:40;
-		bottom:1145;
+		bottom:1185;
 		z-index:4;
 		image-rendering: pixelated;
 		width:250;
