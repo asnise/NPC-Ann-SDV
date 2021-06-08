@@ -25,6 +25,24 @@
 8 | AnnHouse | 6:30 pm - 12:00 am
 10 | BathHouse | 7:00 pm - 0:00 pm
 
+#### spring, fall, winter
+เวลา | สถานที่
+------------ | -------------
+6:30 | AnnHouse
+7:10 | Town
+11:30 | SeedShop
+13:00 | ArchaeologyHouse
+18:30 | AnnHouse
+
+#### summer
+เวลา | สถานที่
+------------ | -------------
+6:30 | AnnHouse
+6:50 | Town
+9:00 | SeedShop
+11:00 | ArchaeologyHouse
+18:30 | AnnHouse
+
 รายชื่อผู้สนับสนุน
 ```sh
 MR.AoteLnwza
