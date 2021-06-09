@@ -46,7 +46,7 @@
 ### ของที่ชอบ
 ระดับ | ไอเทม
 ------------ | -------------
-ชอบมาก | Ruby Diamond Prismatic Shard Maki Roll Salad 38 Pearl Red Plate Milk
+ชอบมาก | Ruby Diamond Prismatic Shard Maki Roll Salad Pearl Red Plate Milk
 ชอบ | Pancakes Cookie Rhubarb Pie Blueberry Tart Fish Stew Lobster Bisque
 ขยะหรอ | Pickles Clay
 
