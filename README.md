@@ -43,6 +43,13 @@
 11:00 | ArchaeologyHouse
 18:30 | AnnHouse
 
+### ของที่ชอบ
+ระดับ | ไอเทม
+------------ | -------------
+ชอบมาก | Ruby Diamond Prismatic Shard Maki Roll Salad 38 Pearl Red Plate Milk
+ชอบ | Pancakes Cookie Rhubarb Pie Blueberry Tart Fish Stew Lobster Bisque
+ขยะหรอ | Pickles Clay
+
 รายชื่อผู้สนับสนุน
 ```sh
 MR.AoteLnwza
