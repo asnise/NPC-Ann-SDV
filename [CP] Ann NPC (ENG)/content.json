@@ -1,0 +1,301 @@
+{
+    "Format": "1.6",
+    "Changes": [{
+            "LogName": "NPC Manifestation",
+            "Action": "EditData",
+            "Target": "Data/NPCDispositions",
+            "Entries": {
+                "Ann": "teen/polite/outgoing/neutral/female/datable/null/Other/summer 7//AnnHouse 10 12/Ann"
+            }
+        }, {
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "Entries": {
+                "Ann": {
+                    "MarkerCropOffset": 4
+                }
+            }
+        }, {
+            "LogName": "Events",
+            "Action": "Load",
+            "Target": "Data/Events/AnnHouse",
+            "FromFile": "assets/Map/AnnHouse.xnb"
+        }, {
+            "LogName": "Events",
+            "Action": "Load",
+            "Target": "Data/Events/BathHouse_Entry",
+            "FromFile": "assets/Map/BathHouse_Entry.xnb"
+        }, {
+            "LogName": "NPC Gift Tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Ann": "อ๊ะขอบคุณมากนะ! รู้ได้ไงว่าฉันชอบของแบบนี้ ขอบคุณนะฉันชอบมันมากๆเลย!!/64 72 74 228 196 38 797 230 184/ขอบคุณนะ!! ฉันชอบของขวัญจัง../211 223 222 234 728 730 -79 -81/ฉัน...ว่าฉันไม่ชอบมันนะ @/-81 -21 /@ |ขยะหรอ...../342 330/ขอบคุณสำหรับของขวัญ..../424 426 306 307 308 428 446 78 725 726 768 769 -4 142 721 681 688 689 690 -74 309 310 311/"
+            }
+        }, {
+            "LogName": "Animation Description Data",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "ann_read": "16 17 19/18/19 17 16",
+                "ann_dishes": "24 25/24 25/24 25",
+                "ann_wave_left": "20 20 20 20 20 20 20 20 20 20 20 20 20 20 20/12/12",
+                "ann_sleep": "48/48/48",
+                "ann_sit_down": "34/34/34",
+                "ann_drink_coffee": "34 34 30/30 30 30 30 30 30 30 30 29 29 29 29 30 30 30 30 30 30 30 30/30 30 34",
+            }
+        }, {
+            "LogName": "Schedule Dialogue",
+            "Action": "Load",
+            "Target": "Strings/schedules/Ann",
+            "FromFile": "assets/Schedule/ScheduleDialogue.json"
+
+        }, {
+            "LogName": "Engagement Dialogue",
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries": {
+                "Ann0": "ฉันก็กังวลเล็ก น้อยน่ะเกี่ยวกับเรื่องนี้ $7#$b#...ละ ละ ...แล้วคุณหล่ะ$4",
+                "Ann1": "ฉันคิดว่าฉันคงไม่มีความสุขไปกว่านี้แล้ว...$4"
+            }
+        }, {
+            "LogName": "Marriage",
+            "Action": "EditData",
+            "Target": "strings/StringsFromCSFiles",
+            "Entries": {
+                "Utility.cs.5371": "@... แอน... #$b# ในฐานะนายกเทศมนตรี ของเมืองเพลิแกน และฐานะของผู้ถือครอง ตราประทับแห่งการวิวาห์ ของประเทศนี้ ตอนนี้ผมขอประกาศว่า คุณได้กลายเป็นสามีและ... ใช่แล้ว สามีกันอย่างถูกต้อง!$h",
+                "Utility.cs.5377": "@... แอน... #$b# ในฐานะนายกเทศมนตรี ของเมืองเพลิแกน และฐานะของผู้ถือครอง ตราประทับแห่งการวิวาห์ ของประเทศนี้ ตอนนี้ผมขอประกาศว่า คุณได้กลายเป็นภรรยาและสามีกัน อย่างถูกต้อง!$h"
+            },
+            "When": {
+                "Relationship:Ann": "Engaged, Married"
+            }
+        }, {
+            "LogName": "Ann Portraits",
+            "Action": "Load",
+            "Target": "Portraits/Ann",
+            "FromFile": "assets/Image/Ann.png"
+        }, {
+            "LogName": "Ann Sprites",
+            "Action": "Load",
+            "Target": "Characters/Ann",
+            "FromFile": "assets/Image/Sprite.png"
+        },
+        //AfterMarried
+        {
+            "LogName": "Ann Portraits AfterMarried",
+            "Action": "Load",
+            "Target": "Portraits/Ann",
+            "FromFile": "assets/Image/Ann.png",
+            "When": {
+                "Relationship:Ann": "Married"
+            }
+        }, {
+            "LogName": "Ann Sprites AfterMarried",
+            "Action": "Load",
+            "Target": "Characters/Ann",
+            "FromFile": "assets/Image/Sprite.png",
+            "When": {
+                "Relationship:Ann": "Married"
+            }
+        }, {
+            "LogName": "Dialogue",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/Ann",
+            "FromFile": "assets/Dialogue/Dialogue.json"
+        }, {
+            "LogName": "Marriage Dialogue",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/MarriageDialogue/Ann",
+            "FromFile": "assets/Dialogue/marriageDialogue.json"
+        }, {
+            "LogName": "Schedule",
+            "Action": "Load",
+            "Target": "Characters/schedules/Ann",
+            "FromFile": "assets/Schedule/Schedule.json"
+        }, {
+            "Action": "EditData",
+            "Target": "data/festivals/spring13",
+            "Entries": {
+                "Ann": "@ เทศกาลเก็บไข่หล่ะ ดูถ้าเด็กๆจะให้ ความสนใจมากเลยนะ $7"
+            }
+        }, {
+            "Action": "EditData",
+            "Target": "data/festivals/spring13",
+            "Entries": {
+                "Ann": "เย้!! $1#$b#เธอก็รีบๆไปหาสะสิ"
+            },
+            "When": {
+                "Spouse:Ann": "True"
+            }
+        }, {
+            "Action": "EditData",
+            "Target": "data/festivals/spring24",
+            "Entries": {
+                "Ann": "ฉันตื่นเต้นมากเลยนะ!! $1"
+            }
+        }, {
+            "Action": "EditData",
+            "Target": "data/festivals/spring24",
+            "Entries": {
+                "Ann": "*ถอนหายใจ* ฤดูใบไม้ผลิใกล้จะหมดแล้ว.. $2"
+            },
+            "When": {
+                "Spouse:Ann": "True"
+            }
+        }, {
+            "Action": "EditData",
+            "Target": "data/festivals/summer11",
+            "Entries": {
+                "Ann": "อดใจรอไม่ไหวแล้ววว #$b# ฉันชอบของกินของที่นี้มากๆเลย #$b# @ นายก็ตั้งตารอละสิ ^ @ เธอก็ตั้งตารอละสิ $1"
+                "Ann_spouse": "แล้วคุณจะใส่อะไรลงไปหรอ @? #$b# อย่าใส่อะไรน่าเกียจลงไปหล่ะฉันรอกินซุปของปีนี้อยู่"
+            }
+        }, {
+            "Action": "EditData",
+            "Target": "data/festivals/summer28",
+            "Entries": {
+                "Ann": "ฉันน่าจะเอากล้องมา ... $2"
+                "Ann_spouse": "ไง!!! ฉันแทบรอไม่ ไหวแล้วที่จะได้ ดูการอพยพ ของแมงกะพรุน $1#$b#ใช่ๆ ตัวสีเขียวน่ะหายาก มากเลยนะ!! $1"
+            }
+        }, {
+            "Action": "EditData",
+            "Target": "data/festivals/summer28",
+            "Entries": {
+                "Ann": "คืนนี้..... ฉันว่ามันสวยมากๆเลยว่าไหม?? $4"
+            },
+            "When": {
+                "Spouse:Ann": "True"
+            }
+        }, {
+            "Action": "EditData",
+            "Target": "data/festivals/fall16",
+            "Entries": {
+                "Ann": "ดีสิของขายเยอะจัง!! คุณก็เป็นเกษตรกรนิ $0 #$e#มีของมาขายรึป่าววว$1",
+                "Ann_spouse": "บรรยากาศแบบนี้ดีนะว่าไหม?? #$e#เอาหล่ะต้องมีอะไรให้ฉันทำสักอย่าง !!$1"
+            }
+        }, {
+            "Action": "EditData",
+            "Target": "data/festivals/fall16",
+            "Entries": {
+                "Ann": "ฉันไม่ชอบตัวตลกนั้นเลย...$2"
+            },
+            "When": {
+                "Spouse:Ann": "True"
+            }
+        }, {
+            "Action": "EditData",
+            "Target": "data/festivals/fall27",
+            "Entries": {
+                "Ann": "อากาศหนาวขึ้นนะ...$2#$e#ไม่ว่าจะเป็นอากาศหรือบรรยากาศ...",
+                "Ann_spouse": "ฉันคิดว่าฉันรู้สึกว่ามีอะไรมาดึงแขนฉัน...$2"
+            }
+        }, {
+            "Action": "EditData",
+            "Target": "data/festivals/winter8",
+            "Entries": {
+                "Ann": "อากาศหนาวขึ้นนะคุณก็ดูแลตัวเองด้วยหล่ะ ฉันมีแค่ชุดนักศึกษาน่ะ #$b#ฮ่า แต่ฉันชอบอากาศหนาวนะเพราะไทยร้อนมากกก เลย!!!$1"
+            }
+        }, {
+            "Action": "EditData",
+            "Target": "data/festivals/winter8",
+            "Entries": {
+                "Ann": "คุณจะได้ปลาเยอะแค่ไหนนะ!! #$b#ฉันจะเชียร์คุณนะ!!$1"
+            },
+            "When": {
+                "Spouse:Ann": "True"
+            }
+        }, {
+            "Action": "EditData",
+            "Target": "data/festivals/winter25",
+            "Entries": {
+                "Ann": "ที่ไทยก็มีเทศกาลแบบนี้ทุกปีเลยหวังว่าฉันจะได้อะไรบ้างนะ..... $2"
+            }
+        }, {
+            "Action": "EditData",
+            "Target": "data/festivals/winter25",
+            "Entries": {
+                "Ann": "คุณเอาของขวัญมาให้ฉัน @?! $h#$b#นี้ต้องเป็นของขวัญที่ดีที่สุดที่ได้เคยได้มาแน่ๆเลย... $l"
+            },
+            "When": {
+                "Spouse:Ann": "True"
+            }
+        }, {
+            "Action": "EditData",
+            "Target": "strings/StringsFromMaps",
+            "Entries": {
+                "AnnHouse.1": "กาแฟ ของแอน...",
+                "AnnHouse.2": "คอม..ของแอน",
+                "AnnHouse.3": "ใครเป็นคนให้เธอกันนะ",
+                "AnnHouse.4": "ไม่มีอะไรดู...",
+                "AnnHouse.5": "มีแต่หนังสือเต็มไปหมดเลย.."
+                "AnnHouse.6": "เอิ่ม...ไอ้นี่เรียกว่าเมาส์ปากกาสินะ.."
+            }
+        },
+
+        //Events หัวใจ
+        { //2 heart event
+
+            "LogName": "AnnEvent",
+            "Action": "EditData",
+            "Target": "Data/Events/Beach",
+            "Entries": {
+                "952551/f Ann 500/t 630 1000/w sunny": "ocean/29 36/farmer 24 30 2 Ann 29 36 2/skippable/move farmer 0 1 1/move farmer 1 0 2/move farmer 0 5 2/speak Ann \"นี้ @ คุณว่าไหมที่นี้สงบดีจัง....#$b#ฉันรู้สึกชอบคนที่นี้มากเลยนะ$0\"/faceDirection farmer 1/speak Ann \"ขอโทษนะที่ฉันพูดอะไรแปลกๆ....#$b#ฉันเดาว่าคุณก็ชอบที่นี้เหมือนกัน$7#$b#เห้อออ....อยากอยู่ที่นี้นานๆจัง!!$1\"/faceDirection farmer 2/speak Ann \"แล้วที่ฟามคุณเป็นยังไงบ้าง??$7#$b#น่าจะต้องดีแน่ๆถ้าอยู่ที่ฟามร์ $7#$b#ปกติฉันก็อยู่ในเมืองมาตลอดเลย.... จนฉันได้มาที่นี้$7\"/pause 1000/speak Ann \"ถึงอย่างน่ะน!! ฉันก็คิดถึงเพื่อนหลายๆ คนที่น่ะนนะ..$1#$b#อาจจะฟังดูเป็น เด็กเห็นแก่ตัวนะ แต่ก็ต้องยอมรับว่า ฉันค่อนข้างเหงา $4#$b#ฉันก็เรียนมาตลอดเลย...$s#$b#ไม่ค่อยได้ทำอะไรพอมา ที่นี้ฉันสนุกสุดๆ#$b#ที่ได้เจอทุกคนในหมู่บ้าน!! $1\"/question fork1 \"พูดอะไรสักอย่าง.. #จะว่าไหมที่ฉันอยากสนิทกับเธอให้มากกว่านี้ #...\"/fork noResponse/pause 1000/speak Ann \"คุณเป็นคนดีจริงๆเลยนะ...$7^เธอนี้เป็นคนดีจริงๆเลยนะ...$7#$b#ถึงว่าเป็นจุดเริ่มต้นที่ดีนะสำหรับฉัน ฮ่าๆ$1\"/emote farmer 60/speak Ann \"ไว้เจอกันใหม่นะ @ ...$7\"/move Ann 0 -1 0/faceDirection farmer 0/move farmer 0 -4 0/speak Ann \"รู้จักกันแล้วนะคุณขาวสวน$7\"/move Ann -4 0 3 true/move Ann 0 -5 3 true/faceDirection farmer 3/pause 500/faceDirection farmer 2/globalFade/viewport -1000 -1000/end",
+                "noResponse": "pause 500/emote Ann 28/speak Ann \"พอฉันเดินเล่นนานไปหน่อย ...$7\"/move Ann 0 -1 0/faceDirection farmer 0/speak Ann \"ไว้เจอกันใหม่นะ$0\"/move Ann -4 0 3 true/move Ann 0 -5 3 true/faceDirection farmer 3/globalFade/viewport -1000 -1000/end"
+            }
+        }, { // 4 heart event
+
+            "LogName": "AnnEvent",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "952552/f Ann 1000/t 800 1300/w sunny": "playful/35 88/farmer 30 80 2 Ann 32 89 3 Penny 31 89 1 Vincent 20 90 3 Jas 20 91 3/skippable/move farmer 0 5 2/speak Penny \"นี้!!! @ วันนี้อากาศเหมาะ กับการเดินเล่นนะ ว่าไหม!! โอ๊ะแอนก็ไปด้วยนะ$1\"/move farmer 0 3 2/speak Ann \"เอ่!!.... คือ..ว่า..ไม่ใช่นะ!!$4#$b#หมายถึง.. ฉันจะไปอ่านหนังสือกับ เพนนี น่ะ$4\"/speak Penny \"ง้ันเธอคุยกันเลยนะ.. เดียวฉันไปตามเด็กๆ ก่อนนะ..$1\"/move Penny 0 1 3/move Penny -11 0 3/speak Ann \"เอ๋!! ดะ..เดี๋ยวสิ!! $4\"/faceDirection Ann 2/faceDirection Ann 3/emote Ann 28/move farmer 0 1 1/speak Ann \"งะ..ไง  อากาศดีเนอะ ..$7#$b#ง่าา ไม่ไหว ไม่ไหว....$4\"/speed Vincent 6/move Vincent 10 0 0/speed Jas 6/move Jas 11 0 0/speak Vincent \"อ๊ะสวัสดีครับ @ น้ันพี่แอนนิ เฮ่ จีบกันอยู่หรอครับ$1\"/faceDirection Jas 0/speak Jas \"เอ๋ จีบหรอ$1#$b#อ๊ะ!! จริงด้วยพี่แอน หน้าแดงสุดๆ$1\"/faceDirection Ann 2/faceDirection Ann 3/speak Ann \"...อะ เอ๋$4\"/speak Penny \"เด็กๆ อย่าไปรบกวนพี่เขา ใช่ไหมแอน$1\"/faceDirection Penny 1/move Penny 8 0 1/speak Ann \"ไม่รับรู้ด้วยแล้ว!! $4\"/speed Ann 4/move Ann 0 2 3/speed Ann 4/move Ann 8 0 1/speed Ann 4/move Ann 0 6 2/faceDirection Vincent 1/faceDirection farmer 1/faceDirection Jas 1/speak Penny \"หว่าาา ไปสะละงอนรึป่าวเนี่ย ฮิฮิ $1\"/emote farmer 60/pause 500/end"
+            }
+        }, { //6 heart event 6:30 pm - 12:00 am
+
+            "LogName": "AnnEvent",
+            "Action": "EditData",
+            "Target": "Data/Events/AnnHouse",
+            "Entries": {
+                "952553/f Ann 1500/t 630 1200": "playful/14 9/farmer 14 13 0 Ann 6 9 0/skippable/move farmer 0 -1 0/move farmer -2 0 1/faceDirection farmer 0/doAction 12 11/move farmer 0 -3 0/move farmer -2 0 0/faceDirection farmer 3/faceDirection Ann 1/speak Ann \"อ๊ะ!ไง @ พอดีเลยวันนี้ ฉันมีอะไรให้จะ ให้ดูด้วยหล่ะ $1\"/move farmer -3 0 1/faceDirection farmer 0/faceDirection Ann 0/emote farmer 8/faceDirection Ann 1/speak Ann \"นี้เป็นงานที่ได้ทำระหว่าง อยู่ที่นี้ฉันอยากให้คุณลองดู ให้หน่อยน่ะ$1#$b#เป็นไงบ้าง?\"/question fork1 \"งานของแอนเป็นไงบ้าง? #ดูน่าสนใจนะ แต่แอนเรียน Digital Art นิ #ไม่เห็นน่าสนใจเลย...\"/fork noResponse/speak Ann \"แฮะๆ คือว่าาา$1#$b#ฉันชอบงานวรรณกรรม ด้วยงะ$7#$b#แต่ก็ปรับใช้กันได้นะ $1\"/faceDirection Ann 0/pause 500/faceDirection farmer 3/speak Ann \"เห้ออ.. $2#$b#ทั้งที่อยู่ที่นี่ ก็มีคนเยอะแยะนะ แต่ทำไมฉันเหงาแปลกๆ$2#$b#แต่ก็นะอีกไม่นาน ฉันก็ได้กลับไป แล้ว... รึ... ป่าวนะ$3\"/emote farmer 32/faceDirection Ann 1/speak Ann \"อะไรเล่า!! $4#$b#ก็จริงนี่นา ถึงจะพูดไปแบบนั้น แต่ทุกคนที่อยู่ที่นี่ ก็ใจดีมาก$4#$b#แต่ก็แค่รู้สึกอยากมีคนค่อย ฟังเริ่องต่างๆ ค่อยรอดีใจด้วยกันกับ เรื่องต่างๆ$4\"/question fork1 \"พูดอะไรสักอย่าง.. #ก็มีเราทั้งคนนี้ไง#แล้วไง..ก็แค่อยู่ตัวคนเดียว\"/fork noResponse/speak Ann \"เอ๋.. $11#$b#นี่ ได้หรอจะยอมฟัง ทุกเรื่องเลยหรอ แต่มันจะรบกวน คุณเปล่าๆนะ$11#$b#แต่ก็ ขอบคุณนะ! $1\"/emote farmer 32/speak Ann \"ตั้งแต่เมื้อกีัแล้ว มันดูใกล้เกินไปรึป่าว..$4#$b#ยังไม่ใช่ตอนนี้หรอกนะ!! ถอยออกไปก่อน!! $4\"/animate farmer false true 100 102 103/pause 1000/globalFade/viewport -1000 -1000/pause 600/stopAnimation farmer/end warpOut",
+                "noResponse": "pause 500/speak Ann \"หรอ..ขอโทษนะที่ทำให้เสียเวลา $2\"/pause 1000/globalFade/viewport -1000 -1000/pause 600/end warpOut"
+            }
+        }, { //8 heart
+            "LogName": "AnnEvent",
+            "Action": "EditData",
+            "Target": "Data/Events/AnnHouse",
+            "Entries": {
+                "952556/f Ann 2000/t 630 1200": "distantBanjo/16 8/farmer 14 13 0 Ann 18 8 0/skippable/faceDirection Ann 1/faceDirection Ann 3/pause 300/faceDirection Ann 1/faceDirection Ann 3/faceDirection Ann 3/faceDirection Ann 0/speak Ann \"ทำไงดี!! ทำไงดี!! ทำไงดี!! ทำไงดี!! ทำไงดี!! ทำไงดี!! $4\"/move farmer 0 -1 0/move farmer 2 0 0/move farmer 0 -1 0/move farmer 1 0 0/move farmer 0 -1 0/jump Ann 4/faceDirection Ann 2/speak Ann \"นี่!!! @ ฉันทำมังงะหายน่ะ! ขอโทษนะแต่ช่วยฉันหาได้รึป่าว $4\"/emote farmer 60/speak Ann \"ĉ¹ËÒµÃ§Թ¹¹Ð Ȥ³ʁËÒµÃ§Թ¹ $4\"/pause 500/speed Ann 5/move Ann -2 0 0/move farmer 0 2 1/move farmer 2 0 0/move Ann 0 -1 3/move farmer 1 0 0/faceDirection farmer 0/move farmer 1 0 0/faceDirection farmer 0/move Ann 2 0 0/faceDirection Ann 0/pause 300/move farmer -2 0 0/move farmer 0 -4 0/emote Ann 12/emote farmer 16/faceDirection Ann 2/jump Ann 4/speak Ann \"เจอแล้วหรอ!? $4#$b#ขอบคุณนะ!! ฉันนี่ชอบลืมหนังสือ อยู่เลื่อยเลยอะ$1#$b#หืม? น่าสนใจหรอ?$0#$b#ใช่ม่าาา ~ มาอ่านด้วยกันก็ได้นะ$1 \"/fade/message \"แล้วเธอก็เริ่มอ่านดูเหมือนว่าเธอมากเลย เริ่มใกล้ชิดกับเธอมาขึ้นแล้วสิ\"/end warpOut"
+
+            }
+        }, { //จดหมายหัวใจ 10ดวง//
+            "LogName": "TellYourHeart",
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries": {
+                "annhesitate": "คือว่า.. @ มาเจอฉันหน่อยได้ไหม? ที่โรงอาบน้ำน่ะ^พอดีว่าเพนนีแนะนำฉันมาแต่ไม่มีเพื่อนไปเลยเพนนีเองก็ไม่ว่าง^ฉันมีหลายๆเรื่องเลยที่จะคุยกับคุณน่ะ ^ประมาณ 7:00PM นะฉันคิดว่างั้น..^ฉันมีเรื่องอยากจะคุยกับคุณมากๆเลย!! ^ขอบคุณที่อ่านนะ!! จาก, Ann[#]First Mail"
+            }
+        }, {
+            "LogName": "AnnEvent",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "962555/f Ann 2500/x annhesitate": "null"
+            }
+        }, { //8 heart 1/2
+            "LogName": "AnnEvent",
+            "Action": "EditData",
+            "Target": "Data/Events/BathHouse_Entry",
+            "Entries": {
+                "967415/f Ann 2500/t 1900 2400/n annhesitate": "echos/5 6/farmer 5 9 0 Ann 4 4 2/skippable/jump Ann 3/emote Ann 16/move farmer 0 -4 0/move farmer -1 0 0/faceDirection farmer 0/speak Ann \"ขอบคุณที่มานะ $1#$b#งั้นฉันไปเปลี่ยนชุดแล้วนะ$7\"/move Ann -2 0 0/faceDirection Ann 0/pause 600/warp Ann -1000 -1000/playSound doorClose/end position 4 5"
+
+            }
+        }, { //10 heart 2/2
+            "LogName": "AnnEvent",
+            "Action": "EditData",
+            "Target": "Data/Events/BathHouse_Pool",
+            "Entries": {
+                "968455/f Ann 2500/t 1900 2400/n annhesitate": "echos/15 15/farmer 21 13 3 Ann 12 15 1/swimming farmer/swimming Ann/skippable/emote Ann 60/move farmer 0 2 3/move farmer -5 0 3/move Ann 1 0 1/playSound slosh/pause 700/speak Ann \"ฉันดีใจมากเลยนะที่คุณมา  เพนนีเธอบอกว่าเธอมาที่นี่บ่อยๆ$6#$b#ที่จริงแทนที่บอกว่า มาคุยแต่เป็นการ ขอบคุณมากกว่า$8#$b#ขอบคุณนะ สำหรับทุกๆอย่างที่ทำให้ฉัน$6\"/move Ann 1 0 1/speak Ann \"แล้วก็อีกเรื่อง..$6#$b#จะเริ่มยังไงดี..$8\"/pause 1000/playSound slosh/speak Ann \"คือว่าเรื่องความรู้สึกที่ฉันมี ให้คุณนะ$8#$b#ตอนแรกฉันคิดว่าฉันคิดไปเอง แต่ทุกครั้งที่คุณเริ่มเข้าใกล้ ฉันกับรู้สึกแปลกๆที่หน้าอก $8\"/question fork1 \"... #แอนฉันชอบเธอนะ #ขอโทษนะ เธอก็แค่คิดไปเอง...\"/fork Heartbroken/move farmer -1 0 3/speak Ann \"นี่.. คือว่า...$8\"/pause 1000/showFrame Ann 32/pause 200/playSound slosh/positionOffset Ann 2 0/pause 50/positionOffset Ann 2 0/pause 50/positionOffset Ann 2 0/pause 50/positionOffset Ann 2 0/positionOffset farmer -2 0/pause 50/positionOffset Ann 2 0/positionOffset farmer -2 0/pause 50/eyes 1 -10000/positionOffset Ann 2 0/positionOffset farmer -2 2/pause 50/positionOffset Ann 2 0/positionOffset farmer -2 0/pause 50/positionOffset Ann 2 0/positionOffset farmer -2 0/pause 50/positionOffset Ann 2 0/positionOffset farmer -2 0/pause 50/positionOffset Ann 2 0/positionOffset farmer -2 0/specificTemporarySprite heart 13 29/speak Ann \"ขอบคุณนะ..$10#$b#ตั้งแต่วันแรกที่เจอกัน ฉันไม่คิดว่าเราจะได้ รู้จักกันมากขนาดนี้$9#$b#@.... ฉันชอบคุณนะ$10\"/pause 1200/globalFade/viewport -1000 -1000/pause 2000/stopSwimming farmer/stopSwimming Ann/end warpOut",
+                "Heartbroken": "move Ann 0 -2 0/friendship Ann -1500/faceDirection farmer 0/shake Ann 5000/globalFade/viewport -1000 -1000/stopSwimming farmer/stopSwimming Ann/end warpOut"
+            }
+        }
+    ]
+}
