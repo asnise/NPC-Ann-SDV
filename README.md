@@ -55,5 +55,5 @@
 MR.AoteLnwza
 ```
 
-ภาพ และ บท โดย Asnise
+ภาพ และ บท โดย Asnise\
 แปลอังกฤษ โดย Tanapat Thaensangjareon Phongkamon
