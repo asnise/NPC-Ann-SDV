@@ -11,3 +11,18 @@ $.ajax({
 });
 });
 
+function cansel_win(idtag ,name,content)
+{
+	var win_alert = document.getElementById(idtag);
+	if (win_alert.style.display === "block")
+	{
+		win_alert.style.display = "none";
+	}
+	else
+	{
+		win_alert.style.display = "block";
+	}
+			document.getElementById("title_name").innerHTML = name;
+		document.getElementById("content_mod").innerHTML = content;
+}
+
