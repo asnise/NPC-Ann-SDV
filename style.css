@@ -4,7 +4,24 @@
     box-sizing: border-box;
     font-family: 'Kanit', sans-serif;
 }
-
+#content_mod {
+    margin: 0 20;
+}
+table{
+	padding:0 10px;
+}
+tr:hover {
+	background-color: rgba(0,0,0,0.2);
+	cursor:default;
+}
+th {
+    background-color: #ff8000;
+    color: white;
+    padding: 0 2px;
+}
+td {
+    padding: 0 7px;
+}
 a {
     cursor: pointer;
 }
@@ -69,8 +86,8 @@ a {
 .btn_b {
     position: relative;
     display: inline-block;
-    margin-top: 30px;
-    padding: 10px 30px;
+    margin-top: 10px;
+    padding: 5px 25px;
     background: #242424;
     color: #fff;
     transition: .2s;
@@ -407,7 +424,10 @@ p {
 	.content h2 {
 		width: 70%
     }
-
+table{
+    width: 100%;
+    font-size: 47px;
+}
     .content a:hover {
         background: rgb(255,255,255,1);
         color: #ff9800:
