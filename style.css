@@ -360,7 +360,7 @@ p {
     .pre {
         position: absolute;
         right: 350;
-        bottom: 1250;
+        bottom: 1350;
         z-index: 4;
         image-rendering: pixelated;
         width: 180;
@@ -369,7 +369,7 @@ p {
     .face {
         position: absolute;
         right: 40;
-        bottom: 1250;
+        bottom: 1350;
         z-index: 4;
         image-rendering: pixelated;
         width: 250;
