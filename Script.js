@@ -27,12 +27,15 @@ function cansel_win(idtag ,name,content)
 	{
 		win_alert.style.display = "block";
 	}
-	if(content = "log")
+	if(content == "log")
 	{
-		content = data_load_body.slice(0,75).replace("\n-","<br>-").replace("\n-","<br>-");
-		console.log(content);
+		document.getElementById("content_mod").innerHTML = data_load_body.slice(0,75).replace("\n-","<br>-").replace("\n-","<br>-");
+	}
+	else
+	{
+		document.getElementById("content_mod").innerHTML = content;
 	}
 		document.getElementById("title_name").innerHTML = name;
-		document.getElementById("content_mod").innerHTML = content;
+		
 }
 
