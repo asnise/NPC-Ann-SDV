@@ -7,6 +7,15 @@
 #content_mod {
     margin: 0 20;
 }
+#visits
+{
+    background: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    color: #fff;
+    width: 25%;
+    border-radius: 5px;
+    padding: 2px 10px;
+}
 table{
 	padding:0 10px;
 }
@@ -266,6 +275,11 @@ p {
     .btn_b {
         font-size: 60px;
     }
+    #visits
+    {
+        font-size: 40px;
+        width: 50%;
+    }
 
     .notification {
         width: 85%;
@@ -360,7 +374,7 @@ p {
     .pre {
         position: absolute;
         right: 350;
-        bottom: 1350;
+        bottom: 1380;
         z-index: 4;
         image-rendering: pixelated;
         width: 180;
@@ -369,7 +383,7 @@ p {
     .face {
         position: absolute;
         right: 40;
-        bottom: 1350;
+        bottom: 1380;
         z-index: 4;
         image-rendering: pixelated;
         width: 250;
