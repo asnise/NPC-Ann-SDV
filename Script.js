@@ -1,6 +1,8 @@
 var log;
 var data_load;
 var data_load_body = "";
+var update_log = [];
+
 
 $(document).ready(function () {
 	$.getJSON("https://api.countapi.xyz/hit/asnise.github.io/visits", function (response) {
@@ -14,6 +16,7 @@ $(document).ready(function () {
 		success(data) {
 			data_load = data;
 			data_load_body = data_load.body.toString();
+			update_log = data_load_body.split("---");
 			let version = $('<h4>').text("An In Stardew Version " + data.tag_name);
 			$('#ver')
 				.append(version);
@@ -30,7 +33,8 @@ function cansel_win(idtag, name, content) {
 		win_alert.style.display = "block";
 	}
 	if (content == "log") {
-		document.getElementById("content_mod").innerHTML = data_load_body.slice(0, 75).replace("\n-", "<br>-").replace("\n-", "<br>-");
+		
+		document.getElementById("content_mod").innerHTML = update_log[0].replace("\n-", "<br>-").replace("\n-", "<br>-");
 	}
 	else {
 		document.getElementById("content_mod").innerHTML = content;
@@ -38,4 +42,3 @@ function cansel_win(idtag, name, content) {
 	document.getElementById("title_name").innerHTML = name;
 
 }
-
