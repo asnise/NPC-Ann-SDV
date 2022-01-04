@@ -2,7 +2,8 @@ var log;
 var data_load;
 var data_load_body = "";
 var update_log = [];
-
+var das_spit = [];
+var log_body = "";
 
 $(document).ready(function () {
 	$.getJSON("https://api.countapi.xyz/hit/asnise.github.io/visits", function (response) {
@@ -33,8 +34,15 @@ function cansel_win(idtag, name, content) {
 		win_alert.style.display = "block";
 	}
 	if (content == "log") {
-		
-		document.getElementById("content_mod").innerHTML = update_log[0].replace("\n-", "<br>-").replace("\n-", "<br>-");
+		das_spit = update_log[0].split("-");
+
+		for(item in das_spit)
+		{
+			item =  "-" + das_spit[item] + "<br>";
+			log_body += item;
+		}
+
+		document.getElementById("content_mod").innerHTML = log_body.replace("-มีอะไรใหม่?", "");
 	}
 	else {
 		document.getElementById("content_mod").innerHTML = content;
