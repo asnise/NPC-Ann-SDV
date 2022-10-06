@@ -52,7 +52,7 @@
 
 รายชื่อผู้สนับสนุน
 ```sh
-MR.AoteLnwza, Someone,MR.CHAYANON
+MR.AoteLnwza, Someone,MR.CHAYANON,Jirachart,ผู้ไม่ประสงออกนาม
 ```
 
 ภาพ และ บท โดย Asnise\
