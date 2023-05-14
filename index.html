@@ -1,75 +1,74 @@
+<!DOCTYPE html>
+<html>
+
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-        href="https://github.githubassets.com/assets/gist-embed-52b3348036dbd45f4ab76e44de42ebc4.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://cdn.discordapp.com/attachments/619853456500457474/709049797838897192/icon_a.png"
-        type="image/icon type">
-    <title>Home</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet"
+		href="https://github.githubassets.com/assets/gist-embed-52b3348036dbd45f4ab76e44de42ebc4.css">
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&amp;display=swap" rel="stylesheet">
+	<link rel="icon" href="icon.png" type="image/icon type">
+	<title>Ann NPC</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="Script.js"></script>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 </head>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="Script.js"></script>
-<html lang="th">
+
 
 <body>
-    <div class="notification_alert" id="notification_alert">
-        <div class="notification_bg"></div>
-        <div class="notification">
-            <h1 id="title_name"></h1>
-            <div id="content_mod"></div>
-            <a onclick="cansel_win('notification_alert')" class="btn_b">กลับ</a>
-        </div>
-    </div>
-    <section>
-        <header>
-            <a href="https://web.facebook.com/ASniseEarth" class="logo" target="_blank">Page</a>
-        </header>
-        <img src="bg.jpg" class="bg">
-        <img src="ann.gif" class="pre" alt="this slowpoke moves" width=130 />
-        <img src="ann_face.gif" class="face" alt="this slowpoke moves" width=200 />
-        <div class="content">
-            <h2 id="ver"></h2>
-            <br>
-            <h3 id="visits"></h3>
-            <a onclick="cansel_win('notification_alert','เรื่องย่อย','<p>แอนเป็นนักศึกษาแลกเปลี่ยนจากประเทศไทย ที่ได้มาทำงานวิจัยเกี่ยวกับพืชผักที่สตาร์ดิวแวลลี่ในเมืองเพลิแกน เวลาส่วนใหญ่เธอจะใช้เวลาไปกับการอ่านหนังสือและวาดภาพ(นานๆที เธอถึงจะวาดน่ะนะ) เนื่องด้วยเธอ ได้ย้ายออกมาจากตัวเมืองเธอจึงไม่ค่อยชอบหน้าฝนนัก และเธอเป็นญาติห่างๆของเพนนีอีกด้วยเนื่องด้วยพวก เธอมีอะไรที่คล้ายๆกัน อีกอย่างแอนเป็นคนที่ค่อยข้างเหงาและไม่ชินกับเรื่องความรักเธอจึงทำตัวเหมือนเด็กไปสะหน่อย ในบางเวลาที่โดนแซวเรื่องนี้ และเธอ บรรลุนิติภาวะแล้ว ผู้เล่นสามารถหมั้นหรือขอแต่งงานได้อีกด้วย</p>')"
-                target="_blank">เรื่องย่อย</a>
-            <a onclick="cansel_win('notification_alert','คัทชีน','<table><thead><tr><th>หัวใจ</th><th>สถานที่</th><th>เวลา</th></tr></thead><tbody><tr><td>2</td><td>Beach</td><td>6:30 am - 10:00 am</td></tr><tr><td>4</td><td>Town</td><td>8:00 am - 1:00 pm</td></tr><tr><td>6</td><td>AnnHouse</td><td>6:30 pm - 12:00 am</td></tr><tr><td>8</td><td>AnnHouse</td><td>6:30 pm - 12:00 am</td></tr><tr><td>10</td><td>BathHouse</td><td>7:00 pm - 0:00 pm</td></tr></tbody></table>')"
-                target="_blank">คัทชีน</a>
-            <a onclick="cansel_win('notification_alert','ของที่ชอบ','<table><thead><tr><th>ระดับ</th><th>ไอเทม</th></tr></thead><tbody><tr><td>ชอบมาก</td><td>Ruby, Diamond, Prismatic, Shard, Maki Roll, Salad, Pearl, Red Plate, Milk</td></tr><tr><td>ชอบ</td><td>Pancakes, Cookie, Rhubarb, Pie Blueberry, TartFishStew, Lobster, Bisque</td></tr><tr><td>ขยะหรอ</td><td>Pickles. Clay</td></tr></tbody></table>')"
-                target="_blank">ของที่ชอบ</a>
-            <a onclick="cansel_win('notification_alert','มีอะไรใหม่','log')" target="_blank">มีอะไรใหม่ ?</a>
-            <br>
-            <h1>*ต้องมี ลงใน SMAPI และมี MOD เสริมดังนี้*<h1>*ลบเวอร์ชั่นเก่าออกทุกครั้งที่อัปเดต*</h1></h1>
-            <br>
-            <p>*ของ Android แนะนำคลิกโหลดตามลิ้งเลย &&PC ให้โหลดเวอร์ชั่นล่าสุดมาใช้ได้เลย*</p>
-            <a href="https://www.nexusmods.com/stardewvalley/mods/1915?tab=files&file_id=32967" class="mod_puls"
-                target="_blank">Content Patch
-            </a>
-            <a href="https://www.nexusmods.com/stardewvalley/mods/3849?tab=files&file_id=18955" class="mod_puls"
-                target="_blank">CustomNPCFixes
-            </a>
-            <a href="https://www.nexusmods.com/stardewvalley/mods/1820?tab=files&file_id=31421" class="mod_puls"
-                target="_blank">TMXLoader
-            </a>
-            <a href="https://www.nexusmods.com/stardewvalley/mods/1726?tab=files&file_id=31409" class="mod_puls"
-                target="_blank">PyTK
-            </a>
-            <a href="https://www.nexusmods.com/stardewvalley/mods/7052" class="mod_puls" target="_blank">[CP] ModTH
-            </a>
-            <br>
-            <a href="https://github.com/asnise/NPC-Ann-SDV/raw/master/%5BCP%5D%20Ann%20NPC.zip">Download</a>
-            <a href="#none">Download [ENG] ยังไม่พร้อม</a>
-            <a href="https://github.com/asnise/NPC-Ann-SDV/raw/master/%5BCP%5D%20Ann%20NPC%20(Mobile).zip">Download
-                [Mobile]</a>
-        </div>
-    </section>
-
-    <div class="donate">
-    <a href="donate.html" target="_blank">ซื้อกาแฟ</a>
-</div>
+	<img src="ann_face.gif" class="face" alt="this slowpoke moves" width="200">
+	<img src="ann.gif" class="pre" alt="this slowpoke moves" width="100">
+	<div class="background_"></div>
+	<div class="background_0"></div>
 
 
+	<div class="content">
+		<div class="Head_">
+			<h1>ANN In <br>Stardew Valley</h1>
+
+			<div class="container">
+				<p>แอนเป็นนักศึกษาแลกเปลี่ยนจากประเทศไทย
+					ที่ได้มาทำงานวิจัยเกี่ยวกับพืชผักที่สตาร์ดิวแวลลี่ในเมืองเพลิแกน
+					เวลาส่วนใหญ่เธอจะใช้เวลาไปกับการอ่านหนังสือและวาดภาพ(นานๆที เธอถึงจะวาดน่ะนะ) เนื่องด้วยเธอ
+					ได้ย้ายออกมาจากตัวเมืองเธอจึงไม่ค่อยชอบหน้าฝนนัก และเธอเป็นญาติห่างๆของเพนนีอีกด้วยเนื่องด้วยพวก
+					เธอมีอะไรที่คล้ายๆกัน
+					อีกอย่างแอนเป็นคนที่ค่อยข้างเหงาและไม่ชินกับเรื่องความรักเธอจึงทำตัวเหมือนเด็กไปสะหน่อย
+					ในบางเวลาที่โดนแซวเรื่องนี้ และเธอ บรรลุนิติภาวะแล้ว ผู้เล่นสามารถหมั้นหรือขอแต่งงานได้อีกด้วย</p>
+			</div>
+			<br>
+			<p class="green">พัฒนาโดย Asnise</p>
+			<div class="status">
+				<p id="status_tx">อยู่ในการอัปเดต</p>
+				<br>
+				<p id="ver"></p>
+				<p id="visits"></p>
+			</div>
+		</div>
+		<div class="info_">
+
+			<div class="button-container">
+				<a href="#" class="button">▶ คัทซีน</a>
+				<a href="#" class="button">❤ ของที่ชอบ</a>
+				<a href="#" class="button">🔧 MOD ที่จำเป็น</a>
+			</div>
+		</div>
+
+
+		<div class="Download_">
+			<div class="button-container">
+				<a href="https://github.com/asnise/NPC-Ann-SDV/raw/master/%5BCP%5D%20Ann%20NPC.zip" class="download"
+					id="pc_dw"><i style="font-size:16px" class="fa">&#xf108;</i> PC</a>
+				<a href="https://github.com/asnise/NPC-Ann-SDV/raw/master/%5BCP%5D%20Ann%20NPC%20(Mobile).zip"
+					class="download"><i style="font-size:16px" class="fa">&#xf17b;</i> Android</a>
+				<a href="donate.html" target="_blank" class="donate">Donate</a>
+			</div>
+		</div>
+
+	</div>
 </body>
 
 </html>
