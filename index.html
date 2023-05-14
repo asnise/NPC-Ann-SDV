@@ -20,6 +20,117 @@
 
 
 <body>
+	<div id="Timetable">
+	<div id="Black"><br></div>
+	<div id="infoWindow">
+		<span id="closeButton" onclick="hideInfoWindow()">&times;</span>
+		<table>
+		  <thead>
+			<tr>
+			  <th>หัวใจ</th>
+			  <th>สถานที่</th>
+			  <th>เวลา</th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr>
+			  <td>2</td>
+			  <td>Beach</td>
+			  <td>6:30 a.m. - 10:00 a.m.</td>
+			</tr>
+			<tr>
+			  <td>4</td>
+			  <td>Town</td>
+			  <td>8:00 a.m. - 1:00 p.m.</td>
+			</tr>
+			<tr>
+			  <td>6</td>
+			  <td>AnnHouse</td>
+			  <td>6:30 p.m. - 12:00 p.m.</td>
+			</tr>
+			<tr>
+			  <td>8</td>
+			  <td>AnnHouse</td>
+			  <td>6:30 p.m. - 12:00 p.m.</td>
+			</tr>
+			<tr>
+			  <td>10</td>
+			  <td>BathHouse</td>
+			  <td>7:00 p.m. - 12:00 a.m.</td>
+			</tr>
+		  </tbody>
+		</table>
+	  </div>
+	</div>
+
+	<div id="Giftitem">
+	<div id="Black"><br></div>
+	<div id="infoWindow">
+		<span id="closeButton" onclick="hideInfoWindow_gift()">&times;</span>
+		<table>
+		  <thead>
+			<tr>
+			  <th>ระดับ</th>
+			  <th>ไอเทม</th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr>
+			  <td>ชอบมาก</td>
+			  <td>Ruby, Diamond, Prismatic, Shard, Maki, Roll, Salad, Pearl, Red, Plate, Milk</td>
+			</tr>
+			<tr>
+			<td>ชอบ</td>
+			<td>Pancakes, Cookie, Rhubarb, Pie, Blueberry, Tart, Fish, Stew, Lobster, Bisque</td>
+			</tr>
+			<tr>
+			  <td>ม่ายชอบ</td>
+			  <td>Pickles Clay</td>
+			</tr>
+		  </tbody>
+		</table>
+	</div>
+</div>
+
+<div id="Requir">
+	<div id="Black"><br></div>
+	<div id="infoWindow">
+		<span id="closeButton" onclick="hideInfoWindow_Requir()">&times;</span>
+		<table>
+			<thead>
+			  <tr>
+				<th>Mod</th>
+				<th>Download</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td>Stardew Valley Thai</td>
+				<td><a href="https://www.nexusmods.com/stardewvalley/mods/7052">Link</a></td>
+			  </tr>
+			  <tr>
+				<td>Content Pacther</td>
+				<td><a href="https://www.nexusmods.com/stardewvalley/mods/1915">Link</a></td>
+			  </tr>
+			  <tr>
+				<td>Custom Npc Fixes</td>
+				<td><a href="https://www.nexusmods.com/stardewvalley/mods/3849">Link</a></td>
+			  </tr>
+			  <tr>
+				<td>TMX Loader</td>
+				<td><a href="https://www.nexusmods.com/stardewvalley/mods/1820">Link</a></td>
+			  </tr>
+			  <tr>
+				<td>PYTK</td>
+				<td><a href="https://www.nexusmods.com/stardewvalley/mods/">Link</a></td>
+			  </tr>
+			</tbody>
+		  </table>
+		  
+		  
+	</div>
+</div>
+
 	<img src="ann_face.gif" class="face" alt="this slowpoke moves" width="200">
 	<img src="ann.gif" class="pre" alt="this slowpoke moves" width="100">
 	<div class="background_"></div>
@@ -51,9 +162,9 @@
 		<div class="info_">
 
 			<div class="button-container">
-				<a href="#" class="button">▶ คัทซีน</a>
-				<a href="#" class="button">❤ ของที่ชอบ</a>
-				<a href="#" class="button">🔧 MOD ที่จำเป็น</a>
+				<a href="#" class="button" onclick="showInfoWindow()">▶ คัทซีน</a>
+				<a href="#" class="button" onclick="showInfoWindow_gift()">❤ ของที่ชอบ</a>
+				<a href="#" class="button" onclick="showInfoWindow_Requir()">🔧 MOD ที่จำเป็น</a>
 			</div>
 		</div>
 

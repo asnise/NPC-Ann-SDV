@@ -17,3 +17,38 @@ $(document).ready(function () {
 		}
 	});
 });
+
+
+function showInfoWindow() {
+	var infoWindow = document.getElementById("Timetable");
+	infoWindow.style.display = "block";
+  }
+
+  function hideInfoWindow() {
+	var infoWindow = document.getElementById("Timetable");
+	infoWindow.style.display = "none";
+  }
+
+
+
+  function showInfoWindow_gift() {
+	var infoWindow = document.getElementById("Giftitem");
+	infoWindow.style.display = "block";
+  }
+
+  function hideInfoWindow_gift() {
+	var infoWindow = document.getElementById("Giftitem");
+	infoWindow.style.display = "none";
+  }
+
+  function showInfoWindow_Requir() {
+	var infoWindow = document.getElementById("Requir");
+	infoWindow.style.display = "block";
+  }
+
+  function hideInfoWindow_Requir() {
+	var infoWindow = document.getElementById("Requir");
+	infoWindow.style.display = "none";
+  }
+
+  
